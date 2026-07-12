@@ -8,6 +8,7 @@
       name="description"
       content="Waddy turns your CV into a tailored resume and cover letter for the exact LinkedIn job you're viewing — using the AI model of your choice."
     />
+    <link rel="icon" type="image/png" href="logo.png" />
     <style>
       :root {
         --navy: #0a083b;
@@ -34,15 +35,12 @@
       }
       header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
       .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; }
-      .bolt {
-        display: inline-flex; align-items: center; justify-content: center;
-        width: 30px; height: 30px; border-radius: 50%;
-        background: var(--yellow); color: var(--navy); font-size: 16px;
-      }
+      .brand img { width: 32px; height: 32px; border-radius: 8px; display: block; }
       header nav a { color: #cfc8e6; text-decoration: none; margin-left: 18px; font-size: 15px; }
       header nav a:hover { color: #fff; }
 
-      .hero { padding: 64px 0 48px; text-align: center; }
+      .hero { padding: 56px 0 48px; text-align: center; }
+      .hero-logo { width: 220px; max-width: 72%; height: auto; margin: 0 auto 22px; display: block; }
       .hero h1 { font-size: 2.2rem; margin: 0 0 14px; line-height: 1.2; }
       .hero p { font-size: 1.15rem; color: #444; max-width: 620px; margin: 0 auto 28px; }
       .cta {
@@ -94,7 +92,7 @@
   <body>
     <header>
       <div class="wrap">
-        <div class="brand"><span class="bolt">⚡</span> Waddy</div>
+        <div class="brand">Waddy</div>
         <nav>
           <a href="#how">How it works</a>
           <a href="#support">Support</a>
@@ -105,6 +103,7 @@
 
     <div class="hero">
       <div class="wrap">
+        <img class="hero-logo" src="wordmark.png" alt="Waddy" />
         <h1>Tailored resumes &amp; cover letters for every LinkedIn job</h1>
         <p>
           Waddy turns your CV into a resume and cover letter tailored to the exact

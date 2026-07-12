@@ -8,6 +8,7 @@
       name="description"
       content="How the Waddy Chrome extension handles your data: no server, no tracking — your data stays between your browser and the AI provider you choose."
     />
+    <link rel="icon" type="image/png" href="logo.png" />
     <style>
       :root {
         --navy: #0a083b;
@@ -30,11 +31,7 @@
       header { background: var(--navy); color: #fff; padding: 14px 0; }
       header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
       .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; text-decoration: none; color: #fff; }
-      .bolt {
-        display: inline-flex; align-items: center; justify-content: center;
-        width: 30px; height: 30px; border-radius: 50%;
-        background: var(--yellow); color: var(--navy); font-size: 16px;
-      }
+      .brand img { width: 32px; height: 32px; border-radius: 8px; display: block; }
       header nav a { color: #cfc8e6; text-decoration: none; margin-left: 18px; font-size: 15px; }
       header nav a:hover { color: #fff; }
 
@@ -63,7 +60,7 @@
   <body>
     <header>
       <div class="wrap">
-        <a class="brand" href="index.html"><span class="bolt">⚡</span> Waddy</a>
+        <a class="brand" href="index.html">Waddy</a>
         <nav>
           <a href="index.html">Home</a>
           <a href="index.html#support">Support</a>
