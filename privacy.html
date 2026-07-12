@@ -28,12 +28,12 @@
       a { color: var(--purple); }
       .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
 
-      header { background: var(--navy); color: #fff; padding: 14px 0; }
-      header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      header { background: #fff; border-bottom: 1px solid var(--line); padding: 14px 0; }
+      header .wrap { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
       .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; text-decoration: none; color: #fff; }
       .brand img { width: 32px; height: 32px; border-radius: 8px; display: block; }
-      header nav a { color: #cfc8e6; text-decoration: none; margin-left: 18px; font-size: 15px; }
-      header nav a:hover { color: #fff; }
+      header nav a { color: #0a083b; text-decoration: none; margin-left: 18px; font-size: 15px; }
+      header nav a:hover { color: var(--purple); }
 
       main { padding: 44px 0 60px; }
       h1 { font-size: 1.9rem; margin: 0 0 4px; }
@@ -60,7 +60,6 @@
   <body>
     <header>
       <div class="wrap">
-        <a class="brand" href="index.html">Waddy</a>
         <nav>
           <a href="index.html">Home</a>
           <a href="index.html#support">Support</a>

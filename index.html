@@ -29,15 +29,15 @@
       .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
 
       header {
-        background: var(--navy);
-        color: #fff;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
         padding: 14px 0;
       }
-      header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      header .wrap { display: flex; align-items: center; justify-content: flex-end; gap: 16px; }
       .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; }
       .brand img { width: 32px; height: 32px; border-radius: 8px; display: block; }
-      header nav a { color: #cfc8e6; text-decoration: none; margin-left: 18px; font-size: 15px; }
-      header nav a:hover { color: #fff; }
+      header nav a { color: #0a083b; text-decoration: none; margin-left: 18px; font-size: 15px; }
+      header nav a:hover { color: var(--purple); }
 
       .hero { padding: 56px 0 48px; text-align: center; }
       .hero-logo { width: 220px; max-width: 72%; height: auto; margin: 0 auto 22px; display: block; }
@@ -92,7 +92,6 @@
   <body>
     <header>
       <div class="wrap">
-        <div class="brand">Waddy</div>
         <nav>
           <a href="#how">How it works</a>
           <a href="#support">Support</a>
