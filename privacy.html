@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Waddy</title>
+    <meta
+      name="description"
+      content="How the Waddy Chrome extension handles your data: no server, no tracking — your data stays between your browser and the AI provider you choose."
+    />
+    <style>
+      :root {
+        --navy: #0a083b;
+        --purple: #603297;
+        --yellow: #f6d105;
+        --grey: #f4f4f5;
+        --line: #e7e3f2;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+        color: var(--navy);
+        line-height: 1.65;
+        background: #fff;
+      }
+      a { color: var(--purple); }
+      .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+      header { background: var(--navy); color: #fff; padding: 14px 0; }
+      header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; text-decoration: none; color: #fff; }
+      .bolt {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 30px; height: 30px; border-radius: 50%;
+        background: var(--yellow); color: var(--navy); font-size: 16px;
+      }
+      header nav a { color: #cfc8e6; text-decoration: none; margin-left: 18px; font-size: 15px; }
+      header nav a:hover { color: #fff; }
+
+      main { padding: 44px 0 60px; }
+      h1 { font-size: 1.9rem; margin: 0 0 4px; }
+      .updated { color: #888; font-size: 0.95rem; margin: 0 0 28px; }
+      h2 { font-size: 1.2rem; margin: 34px 0 10px; }
+      p, li { color: #333; }
+      ul { padding-left: 22px; }
+      li { margin-bottom: 6px; }
+      .lead {
+        background: var(--grey); border: 1px solid var(--line);
+        border-radius: 12px; padding: 16px 20px;
+      }
+      .lead ul { margin: 0; }
+
+      footer { padding: 26px 0 48px; color: #888; font-size: 0.9rem; text-align: center; border-top: 1px solid var(--line); }
+      footer a { color: #888; }
+
+      @media (max-width: 640px) {
+        header nav a { margin-left: 12px; }
+        h1 { font-size: 1.55rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a class="brand" href="index.html"><span class="bolt">⚡</span> Waddy</a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="index.html#support">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <h1>Privacy Policy for Waddy</h1>
+        <p class="updated">Last updated: July 12, 2026</p>
+
+        <p>
+          Waddy ("the extension", "we", "us") is a Chrome extension that helps you
+          tailor resumes and cover letters for LinkedIn job postings. This policy
+          explains what information the extension processes, how it is used, and the
+          choices you have.
+        </p>
+
+        <h2>Summary</h2>
+        <div class="lead">
+          <ul>
+            <li><strong>We operate no server and never receive, store, or see your data.</strong> Waddy has no backend of its own.</li>
+            <li>Your data stays on your device (in Chrome's storage) and is sent only to <strong>OpenRouter</strong>, the AI provider, using <strong>your own API key</strong>, to generate your resumes and cover letters.</li>
+            <li>We do <strong>not</strong> sell your data, show ads, or run any analytics or tracking.</li>
+          </ul>
+        </div>
+
+        <h2>Information the extension processes</h2>
+        <p>Waddy processes the following, only to provide its features:</p>
+        <ul>
+          <li><strong>Resume / CV content.</strong> When you upload your CV (a PDF), the extension extracts its text in your browser and sends it to OpenRouter to convert it into a structured format and to generate tailored versions. The structured CV is saved in your browser's storage so you don't have to re-upload it.</li>
+          <li><strong>Job posting details.</strong> When you view a LinkedIn job page, the extension reads the job title, company, location, description, posting URL, and company logo from that page in order to tailor your documents. This is used in the moment and is not retained by us.</li>
+          <li><strong>Your OpenRouter API key.</strong> Stored in your browser's storage so the extension can call the AI provider on your behalf.</li>
+          <li><strong>Preferences.</strong> The AI model you select is saved in your browser's storage.</li>
+        </ul>
+
+        <h2>Where your data is stored</h2>
+        <p>
+          All of the above is stored using <strong>Chrome's <code>storage.sync</code></strong>,
+          which keeps the data in your browser and, if you are signed in to Chrome, syncs it
+          across your own devices through your Google account. <strong>We have no access to this data.</strong>
+        </p>
+
+        <h2>Data shared with third parties</h2>
+        <p>
+          To generate resumes and cover letters, the extension sends your CV text and the job
+          description to <strong>OpenRouter</strong> (<a href="https://openrouter.ai">openrouter.ai</a>),
+          authenticated with the API key you provide. OpenRouter routes the request to the AI
+          model you selected. Your use of OpenRouter is governed by OpenRouter's own privacy
+          policy: <a href="https://openrouter.ai/privacy">https://openrouter.ai/privacy</a>.
+        </p>
+        <p>We do not share your data with anyone else.</p>
+
+        <h2>What we do NOT do</h2>
+        <ul>
+          <li>We do not collect or transmit your data to any server operated by us.</li>
+          <li>We do not use analytics, tracking, or advertising.</li>
+          <li>We do not sell or rent your data.</li>
+        </ul>
+
+        <h2>Permissions</h2>
+        <ul>
+          <li><strong><code>activeTab</code> / host access to <code>linkedin.com/jobs</code></strong> — to read job details from the LinkedIn job page you are viewing.</li>
+          <li><strong>Host access to <code>openrouter.ai</code></strong> — to send generation requests to the AI provider using your API key.</li>
+          <li><strong><code>storage</code></strong> — to save your CV, API key, and preferences in your browser.</li>
+        </ul>
+
+        <h2>Retention and your choices</h2>
+        <ul>
+          <li>Your CV, API key, and preferences remain in your browser's storage until you remove them.</li>
+          <li>You can delete your saved CV at any time using the delete button in the extension, update or remove your API key in Settings, and remove all stored data by uninstalling the extension.</li>
+        </ul>
+
+        <h2>Children</h2>
+        <p>Waddy is not directed to children under 13 and does not knowingly process their data.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy from time to time. Material changes will be reflected by updating the "Last updated" date above.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this policy, contact: <strong><a href="mailto:cheha6@gmail.com">cheha6@gmail.com</a></strong></p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        © <span id="yr"></span> Waddy · <a href="index.html">Home</a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("yr").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

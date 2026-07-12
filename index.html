@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Waddy — Tailored resumes & cover letters for LinkedIn jobs</title>
+    <meta
+      name="description"
+      content="Waddy turns your CV into a tailored resume and cover letter for the exact LinkedIn job you're viewing — using the AI model of your choice."
+    />
+    <style>
+      :root {
+        --navy: #0a083b;
+        --purple: #603297;
+        --yellow: #f6d105;
+        --grey: #f4f4f5;
+        --line: #e7e3f2;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+        color: var(--navy);
+        line-height: 1.6;
+        background: #fff;
+      }
+      a { color: var(--purple); }
+      .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+      header {
+        background: var(--navy);
+        color: #fff;
+        padding: 14px 0;
+      }
+      header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; }
+      .bolt {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 30px; height: 30px; border-radius: 50%;
+        background: var(--yellow); color: var(--navy); font-size: 16px;
+      }
+      header nav a { color: #cfc8e6; text-decoration: none; margin-left: 18px; font-size: 15px; }
+      header nav a:hover { color: #fff; }
+
+      .hero { padding: 64px 0 48px; text-align: center; }
+      .hero h1 { font-size: 2.2rem; margin: 0 0 14px; line-height: 1.2; }
+      .hero p { font-size: 1.15rem; color: #444; max-width: 620px; margin: 0 auto 28px; }
+      .cta {
+        display: inline-block; background: var(--yellow); color: var(--navy);
+        font-weight: 700; text-decoration: none; padding: 13px 26px;
+        border-radius: 10px; font-size: 1.05rem;
+      }
+      .cta:hover { background: #ffde2e; }
+      .cta.secondary { background: transparent; color: var(--purple); border: 1px solid var(--line); margin-left: 10px; }
+
+      section { padding: 44px 0; border-top: 1px solid var(--line); }
+      section h2 { font-size: 1.5rem; margin: 0 0 24px; }
+
+      .steps { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
+      .step .n {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 34px; height: 34px; border-radius: 50%;
+        background: var(--purple); color: #fff; font-weight: 700; margin-bottom: 8px;
+      }
+      .step h3 { margin: 4px 0 6px; font-size: 1.05rem; }
+      .step p { margin: 0; color: #555; font-size: 0.97rem; }
+
+      .features { display: grid; gap: 18px; grid-template-columns: repeat(2, 1fr); }
+      .feature {
+        background: var(--grey); border: 1px solid var(--line);
+        border-radius: 12px; padding: 18px 20px;
+      }
+      .feature h3 { margin: 0 0 6px; font-size: 1.05rem; }
+      .feature p { margin: 0; color: #555; font-size: 0.97rem; }
+
+      .support p { color: #444; }
+      .support .email { font-weight: 700; }
+      .note {
+        background: #fdf7d6; border: 1px solid #f0e08a; color: #6b5e00;
+        border-radius: 10px; padding: 12px 16px; font-size: 0.95rem; margin-top: 18px;
+      }
+
+      footer { padding: 28px 0 48px; color: #888; font-size: 0.9rem; text-align: center; }
+      footer a { color: #888; }
+
+      @media (max-width: 640px) {
+        .steps, .features { grid-template-columns: 1fr; }
+        .hero h1 { font-size: 1.7rem; }
+        header nav a { margin-left: 12px; }
+        .cta.secondary { margin-left: 0; margin-top: 10px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="brand"><span class="bolt">⚡</span> Waddy</div>
+        <nav>
+          <a href="#how">How it works</a>
+          <a href="#support">Support</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="wrap">
+        <h1>Tailored resumes &amp; cover letters for every LinkedIn job</h1>
+        <p>
+          Waddy turns your CV into a resume and cover letter tailored to the exact
+          job you're viewing on LinkedIn — in seconds, using the AI model of your choice.
+        </p>
+        <a class="cta" href="CHROME_STORE_URL">Add to Chrome</a>
+        <a class="cta secondary" href="#how">See how it works</a>
+      </div>
+    </div>
+
+    <section id="how">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="n">1</div>
+            <h3>Open a job</h3>
+            <p>Go to any job posting on LinkedIn. Waddy reads the role's title, company, and description.</p>
+          </div>
+          <div class="step">
+            <div class="n">2</div>
+            <h3>Upload your CV once</h3>
+            <p>Waddy tailors it to highlight what matters for that role and writes a matching cover letter with a match score.</p>
+          </div>
+          <div class="step">
+            <div class="n">3</div>
+            <h3>Download &amp; apply</h3>
+            <p>Get your tailored resume (PDF) and cover letter, ready to send.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Why Waddy</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Save hours</h3>
+            <p>Stop rewriting your resume for every application — Waddy tailors it in seconds.</p>
+          </div>
+          <div class="feature">
+            <h3>Apply smarter</h3>
+            <p>Role-specific resumes and cover letters help you stand out and get more responses.</p>
+          </div>
+          <div class="feature">
+            <h3>Use any AI model</h3>
+            <p>Bring your own OpenRouter key and pick your preferred model — OpenAI, Anthropic, Google, and more.</p>
+          </div>
+          <div class="feature">
+            <h3>Private by design</h3>
+            <p>Waddy has no server of its own. Your CV stays in your browser and is sent only to the AI provider you choose, with your own key.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="support">
+      <div class="wrap">
+        <h2>Support</h2>
+        <p>
+          Need help or found a bug? Email us and we'll get back to you:
+          <br />
+          <a class="email" href="mailto:cheha6@gmail.com">cheha6@gmail.com</a>
+        </p>
+        <p>
+          When reporting an issue, it helps to include the job page you were on,
+          the AI model you selected, and what you expected to happen.
+        </p>
+        <div class="note">
+          <strong>Heads up:</strong> Waddy requires an OpenRouter API key
+          (<a href="https://openrouter.ai/keys">openrouter.ai/keys</a>) so you stay
+          in control of your AI usage and costs. You add it once in the extension's Settings.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        © <span id="yr"></span> Waddy · <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("yr").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
